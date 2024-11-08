@@ -2,9 +2,9 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: ECS cluster infrastructure
 Parameters:
-  ECSClusterName1:
+  ECSClusterName:
     Type: String
-    Description1: Name of the ECS cluster
+    Description: Name of the ECS cluster
   AppName:
     Type: String
     Description: Name of the application
@@ -12,7 +12,7 @@ Parameters:
     Type: String
     Description: VPCStackName - output value from the bootstrap stack 
 
-Resources1:
+Resources:
 
   PublicLoadBalancerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
